@@ -235,8 +235,7 @@ input:focus {
 }
 
 @media (max-width : 495px) {
-  .youtube-text,
-  .youtube-in,
+  .youtube-icon,
   .search-box  {
     display: none;
   }
