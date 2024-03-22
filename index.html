@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/header2.css">
+  <link rel="stylesheet" href="./styles/shorts.css">
+  <link rel="icon" href="./youtube-logo.png">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header-container">
+      <header class="header">
+        <div class="header-left">
+          <svg id="hamburger-svg" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+           
+          <div class="youtube-icon">
+            <div class="youtube-logo">
+              <img src="./youtube-logo.svg" alt="youtube logo">
+              <div class="youtube-in">IN</div>
+            </div>
+          </div>
+        </div>
+        <div class="header-middle">
+          <input type="text" class="search-box" placeholder="Search">
+          <button class="search-button">
+            <svg class="search-button-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="m20.87 20.17-5.59-5.59C16.35 13.35 17 11.75 17 10c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.75 0 3.35-.65 4.58-1.71l5.59 5.59.7-.71zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg>
+            <div class="tooltip">Search</div>
+          </button>
+    
+          <button class="mic-icon-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg>
+          <div class="tooltip">Search with your voice</div>
+          </button>
+        </div>
+        <div class="header-right">
+          <div class="upload">
+            <svg id="upload-svg" xmlns="http://www.w3.org/2000/svg" height="24" style="pointer-events: none; display: block; width: 24px; height: 24px;" viewBox="0 0 24 24" width="24" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg>
+            <div class="tooltip">Create</div>
+          </div>
+    
+          <div class="notification">
+            <svg id="notification-svg" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
+            <div class="tooltip">Notification</div>
+            <div class="notification-num">9</div>
+          </div>
+    
+          <div class="user-logo-container">
+            <img class="user-logo" src="./user-logo.png" alt="user logo">
+          </div>
+        </div>
+      </header>
+
+      <div class="tag-container">
+        <div class="tags"> 
+          <button class="tag-button tag-1">All</button>
+          <button class="tag-button tag-2">CSS</button>
+          <button class="tag-button tag-3">Mutual Funds</button>
+          <button class="tag-button tag-4">Computer Science</button>
+          <button class="tag-button tag-5">Volleyball</button>
+          <button class="tag-button tag-last-7">Test Cricket</button>
+          <button class="tag-button tag-last-6">HTML</button>
+          <button class="tag-button tag-last-5">Indian Premier League</button>
+          <button class="tag-button tag-last-4">Nature</button>
+          <button class="tag-button tag-last-3">MrBeast</button>
+          <button class="tag-button tag-last-2">MKDHD</button>
+          <button class="tag-button tag-last-1">Film Criticism</button>
+          <button class="tag-button tag-last">New to you</button>
+          <div class="arrow-down">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 20px; height: 20px;"><path d="m18 9.28-6.35 6.35-6.37-6.35.72-.71 5.64 5.65 5.65-5.65z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-bar">
+        <div class="nav-home">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
+          <p class="nav-home-text">Home</p>
+        </div>
+        <div class="nav-shorts">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+          <p class="nav-shorts-text">Shorts</p>
+        </div>
+        <div class="nav-subscriptions">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+          <p class="nav-subscriptions-text">Subscriptions</p>
+        </div>
+        <div class="nav-you">
+          <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 24px; height: 24px;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+          <p class="nav-you-text">You</p>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="section-1">
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-1.webp" alt="Thumbnails">
+            <div class="video-timing">19:34</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-1.jpg" alt="channel-icon-">
+            <div class="video-description">
+              <div class="video-title">Formula One: Explained</div>
+              <div class="channel">
+                <div class="channel-name">Marques Brownlee</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">41 lakh views &#8226;	3 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-2.webp" alt="Thumbnails">
+            <div class="video-timing">6:51</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-2.jpg" alt="channel-icon-2">
+            <div class="video-description">
+              <div class="video-title">Is The 400m HARDEST EVENT in Track and Field</div>
+              <div class="channel">
+                <div class="channel-name">Outperform</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">9.7 lakh views &#8226;	3 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-3.webp" alt="Thumbnails">
+            <div class="video-timing">9:45</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-3.jpg" alt="channel-icon-3">
+            <div class="video-description">
+              <div class="video-title">I Asked Googlers How to Get Hired</div>
+              <div class="channel">
+                <div class="channel-name">Namanh Kapur</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">10 lakh views &#8226;	5 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail mrbeast-video-1">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-4.webp" alt="Thumbnails">
+            <div class="video-timing">12:09</div>
+            <img class="mrbeast-video" src="./Mrbeast.webp" alt="hover video">
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-6.jpg" alt="channel-icon-4">
+            <div class="video-description">
+              <div class="video-title">I Survived 50 Hours In Antarctica</div>
+              <div class="channel">
+                <div class="channel-name">MrBeast</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">18 crore views &#8226;	1 year ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-5.webp" alt="Thumbnails">
+            <div class="video-timing">9:48</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-5.jpg" alt="channel-icon-5">
+            <div class="video-description">
+              <div class="video-title">200 Pounds BIG TUNA FISH | Tuna Fish Cutting and Cooking in Village |</div>
+              <div class="channel">
+                <div class="channel-name">Village Cooking Channel</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">4.6 crore views &#8226;	6 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-6.webp" alt="Thumbnails">
+            <div class="video-timing">25:42</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-6.jpg" alt="channel-icon-6">
+            <div class="video-description">
+              <div class="video-title">$456,000 squid Game In Real Life!</div>
+              <div class="channel">
+                <div class="channel-name">MrBeast</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">58 crore views &#8226;	2 years ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-7.webp" alt="Thumbnails">
+            <div class="video-timing">12:10</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-7.jpg" alt="channel-icon-7">
+            <div class="video-description">
+              <div class="video-title">How to do HANDSTAND? 9 easy step to achieve</div>
+              <div class="channel">
+                <div class="channel-name">Andry Strong</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">9 lakh views &#8226;	1 year ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-8.webp" alt="Thumbnails">
+            <div class="video-timing">12:53</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-8.jpg" alt="channel-icon-8">
+            <div class="video-description">
+              <div class="video-title">Ramadan Special Buffet ❤️ | Palmshore - Irfan's view</div>
+              <div class="channel">
+                <div class="channel-name">Irfan's view</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">2.7 lakh views &#8226;	1 months ago </div>
+            </div>
+          </div>
+        </div>        
+               
+      </section>
+      
+      <section class="section-1-shorts">
+        <div class="shorts-layout">
+          <div class="shorts-icon">
+            <div class="shorts-icon-left">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" style="pointer-events: none; display: inherit; width: 24px; height: 24px;">
+                <g>
+                  <path d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z" fill="red"></path>
+                  <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
+                </g>
+              </svg>
+              <div class="shorts-icon-text">Shorts</div>
+            </div>
+            <div class="shorts-icon-right">
+              <svg class="shorts-icon-close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-236-20-20 224-224-224-224 20-20 224 224 224-224 20 20-224 224 224 224-20 20-224-224-224 224Z"/></svg>
+            </div>
+          </div>
+          <div class="shorts-video-layout">
+            <div class="shorts-video">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-1.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Oreo Roll Roulette!🤢</div>
+                <div class="shorts-video-views">17 crore views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-2">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-2.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">The IKEA effect #shorts</div>
+                <div class="shorts-video-views">11 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-3">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-3.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Pressure cooker magic in the kitchen! Who needs an oven...</div>
+                <div class="shorts-video-views">11 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-4">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-4.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Tapping maple trees 🍁</div>
+                <div class="shorts-video-views">17 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-5">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-5.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Use thid method to Style Better outfits (the sandwich method)</div>
+                <div class="shorts-video-views">4.3 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-6">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-6.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">VFX made with a power drill?</div>
+                <div class="shorts-video-views">9.6k views</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="section-1">
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-9.webp" alt="Thumbnails">
+            <div class="video-timing">15:24</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-6.jpg" alt="channel-icon-6">
+            <div class="video-description">
+              <div class="video-title">Spending 24 Hours On Top Of A Mountain</div>
+              <div class="channel">
+                <div class="channel-name">Finance With Sharan</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">19 crore views &#8226;	4 years ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-10.webp" alt="Thumbnails">
+            <div class="video-timing">29:09</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-10.jpg" alt="channel-icon-10">
+            <div class="video-description">
+              <div class="video-title">How to Invest for Beginners</div>
+              <div class="channel">
+                <div class="channel-name">Ali Abdall</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">91 lakh views &#8226;	3 years ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-11.webp" alt="Thumbnails">
+            <div class="video-timing">9:42</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-11.jpg" alt="channel-icon-11">
+            <div class="video-description">
+              <div class="video-title">How to quickly get out or a rut</div>
+              <div class="channel">
+                <div class="channel-name">Better Ideas</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">1.1 crore views &#8226;	4 years ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-12.webp" alt="Thumbnails">
+            <div class="video-timing">12:24</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-12.jpg" alt="channel-icon-12">
+            <div class="video-description">
+              <div class="video-title">The Productivity System I Wish I Had (5 Years Ago)</div>
+              <div class="channel">
+                <div class="channel-name">Cajun Koi Academy</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">20k views &#8226;	12 days ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-13.webp" alt="Thumbnails">
+            <div class="video-timing">27:54</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-13.jpg" alt="channel-icon-13">
+            <div class="video-description">
+              <div class="video-title">Mystery Detective Battle</div>
+              <div class="channel">
+                <div class="channel-name">Dude perfect</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">66 lakh views &#8226;	2 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-14.webp" alt="Thumbnails">
+            <div class="video-timing">14:23</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-14.jpg" alt="channel-icon-14">
+            <div class="video-description">
+              <div class="video-title">போர் நடந்த இடங்கள் :: Sri Lanka Travek Vlog <span style="font-size: 14; font-weight: 400;">LK E1 | DHAYA</span> </div>
+              <div class="channel">
+                <div class="channel-name">Dhaya</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">61 lakh views &#8226;	10 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-15.webp" alt="Thumbnails">
+            <div class="video-timing">18:30</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-15.jpg" alt="channel-icon-15">
+            <div class="video-description">
+              <div class="video-title">Samsung Galaxy S24 Ultra Review: Why Buy Anything Else?</div>
+              <div class="channel">
+                <div class="channel-name">Marques Brownlee</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">68 lakh views &#8226;	1 month ago </div>
+            </div>
+          </div>
+        </div>      
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-16.webp" alt="Thumbnails">
+            <div class="video-timing">6:04</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-16.jpg" alt="channel-icon-16">
+            <div class="video-description">
+              <div class="video-title">Newly-Weds KL Rahul & Athiya Shetty Take The Relationship Quiz | Vogue...</div>
+              <div class="channel">
+                <div class="channel-name">VOGUE India</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">1 crore views &#8226;	1 year ago </div>
+            </div>
+          </div>
+        </div>        
+               
+      </section>
+
+
+      <section class="section-1-shorts">
+        <div class="shorts-layout">
+          <div class="shorts-icon">
+            <div class="shorts-icon-left">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" focusable="false" style="pointer-events: none; display: inherit; width: 24px; height: 24px;">
+                <g>
+                  <path d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z" fill="red"></path>
+                  <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
+                </g>
+              </svg>
+              <div class="shorts-icon-text">Shorts</div>
+            </div>
+            <div class="shorts-icon-right">
+              <svg class="shorts-icon-close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-236-20-20 224-224-224-224 20-20 224 224 224-224 20 20-224 224 224 224-20 20-224-224-224 224Z"/></svg>
+            </div>
+          </div>
+          <div class="shorts-video-layout">
+            <div class="shorts-video">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-7.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Iphone vs Android - which one survives BOILING</div>
+                <div class="shorts-video-views">7.7 crore views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-2">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-8.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Countries Impossible To Invade</div>
+                <div class="shorts-video-views">50 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-3">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-9.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">The Parable of the Chinese
+                  Farmer #shorts</div>
+                <div class="shorts-video-views">9.2 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-4">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-10.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Currently VIbing to #KatchiSera 💃🎶</div>
+                <div class="shorts-video-views">2.8 lakh views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-5">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-11.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title">Meta Quest Pro's Passthrough mode 👀</div>
+                <div class="shorts-video-views">43 crore views</div>
+              </div>
+            </div>
+
+            <div class="shorts-video sv-6">
+              <div class="shorts-thumbnail">
+                <img class="shorts-thumbnail" src="./Shorts-thumbnail/shorts-12.webp" alt="shorts-thumbnail">
+              </div>
+              <div class="shorts-video-description">
+                <div class="shorts-title"></div>
+                <div class="shorts-video-views">29 lakh views</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="section-1">
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-17.webp" alt="Thumbnails">
+            <div class="video-timing">19:23</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-17.jpg" alt="channel-icon-17">
+            <div class="video-description">
+              <div class="video-title">Have YOU seen a BETTER GOPRO INNINGS on YOUTUBE?</div>
+              <div class="channel">
+                <div class="channel-name">Can You Cricket</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">13 lakh views &#8226;	8 months ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-18.webp" alt="Thumbnails">
+            <div class="video-timing">12:30</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-10.jpg" alt="channel-icon-18">
+            <div class="video-description">
+              <div class="video-title">How to Find Time for Everything with a Full Time Job</div>
+              <div class="channel">
+                <div class="channel-name">Ali Abdaal</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">6.7 lakh views &#8226;	4 weeks ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-19.webp" alt="Thumbnails">
+            <div class="video-timing">45:46</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-19.jpg" alt="channel-icon-19">
+            <div class="video-description">
+              <div class="video-title">The Laws of Human Nature by Robert Greene (Detailed Summary) (ii)</div>
+              <div class="channel">
+                <div class="channel-name">Escaping Ordinary (B.C Marx)</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">26 lakh views &#8226;	2 years ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-20.webp" alt="Thumbnails">
+            <div class="video-timing">5:53</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-20.jpg" alt="channel-icon-20">
+            <div class="video-description">
+              <div class="video-title">Trying Animation for the First Time</div>
+              <div class="channel">
+                <div class="channel-name">Gawx Art</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">37 lakh views &#8226;	3 years ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-21.webp" alt="Thumbnails">
+            <div class="video-timing">37:49</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-21.jpg" alt="channel-icon-21">
+            <div class="video-description">
+              <div class="video-title">I bought the CHEAPEST Tech in India!</div>
+              <div class="channel">
+                <div class="channel-name">Mewhosetheboss</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">80 lakh views &#8226;	6 weeks ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-22.webp" alt="Thumbnails">
+            <div class="video-timing">15:53</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-22.jpg" alt="channel-icon-22">
+            <div class="video-description">
+              <div class="video-title">How I make time for everything (even with a full time job)</div>
+              <div class="channel">
+                <div class="channel-name">Miles Mochizuki</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">1 lakh views &#8226;	7 days ago </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-23.webp" alt="Thumbnails">
+            <div class="video-timing">6:50</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-23.jpg" alt="channel-icon-23">
+            <div class="video-description">
+              <div class="video-title">Cardu male 16 number - TempleMonkeysTV</div>
+              <div class="channel">
+                <div class="channel-name">Temple Monkeys</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">6 lakh views &#8226;	4 year ago </div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="video-layout">
+          <div class="thumbnail">
+            <img class="thumbnail" src="./Thumbnails/thumbnail-24.webp" alt="Thumbnails">
+            <div class="video-timing">8:26</div>
+          </div>
+          <div class="channel-info">
+            <img class="channel-logo" src="./channel-icons/channel-icon-24.jpg" alt="channel-icon-24">
+            <div class="video-description">
+              <div class="video-title">My Night Time Routine In New York City</div>
+              <div class="channel">
+                <div class="channel-name">Alex Costa</div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block; width: 14px; height: 14px;"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zM9.8 17.3l-4.2-4.1L7 11.8l2.8 2.7L17 7.4l1.4 1.4-8.6 8.5z"></path></svg>
+              </div>
+              <div class="views">3.2 lakh views &#8226;	1 week ago </div>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </main>
+  </div>
+</body>
+</html>
