@@ -1,0 +1,105 @@
+.tags {
+  height: 54px;
+  padding: 10px 0 0 99px;
+  position: relative;
+  top: 56px;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .96);
+  display: flex;
+  align-items: center;
+  z-index: -1;
+}
+
+.tag-button {
+  font-family: "Roboto", "Arial", sans-serif ;
+  font-size: 14px;
+  font-weight: 500;
+  background-color:  #F0F0F0;
+  padding: 7.5px 12px;
+  margin: 0 12px 12px 0;
+  border: none;
+  border-radius: 7px;
+  color: #0f0f0f;
+  transition: all .25s;
+}
+
+.tag-button:hover {
+  background-color: #e4e4e4;
+}
+
+.tag-1 {
+  background-color: #030303;
+  color: white;
+}
+
+.arrow-down {
+  height: 20px;
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  border-radius: 50px;
+}
+
+.arrow-down:hover {
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 1500px){
+  .tag-last-1{
+    display: none;
+  }
+}
+
+@media (max-width: 1380px){
+  .tag-last-2{
+    display: none;
+  }
+}
+
+@media (max-width: 1280px){
+  .tag-last-3{
+    display: none;
+  }
+}
+
+@media (max-width: 1200px){
+  .tag-last-4{
+    display: none;
+  }
+}
+
+@media (max-width: 1120px){
+  .tag-last-5{
+    display: none;
+  }
+}
+
+@media (max-width: 920px){
+  .tag-last-6{
+    display: none;
+  }
+}
+@media (max-width: 851px){
+  .tag-last-7{
+    display: none;
+  }
+}
+
+@media (max-width: 730px){
+  .tag-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 799px){
+  .tags {
+    padding: 10px 0 0 24px;
+  }
+}
+
+@media (max-width : 575px){
+  .tag-5 {
+    display: none;
+  }
+}
