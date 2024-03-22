@@ -25,12 +25,16 @@
 }
 
 .tag-button:hover {
-  background-color: #e4e4e4;
+  background-color: #dbdbdb;
 }
 
 .tag-1 {
   background-color: #030303;
   color: white;
+}
+
+.tag-1:hover {
+  background-color: #030303;
 }
 
 .arrow-down {
